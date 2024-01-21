@@ -43,15 +43,23 @@ const Eventstab = () => {
   };
 
   const deleteEvent = async (id) => {
-    const res = await fetch(`${host}/api/events/deleteevent/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-        "auth-token": localStorage.getItem("token"),
-      },
-    });
-    const data = await res.json();
-    console.log(data);
+    console.log(id);
+    try {
+      const res = await fetch(`${host}/api/events/deleteevent/${id}`, {
+        method: "DELETE",
+      });
+  
+      if (res.ok) {
+        const data = await res.json();
+        console.log(data);
+        alert("Event Deleted");
+        window.location.reload();
+      } else {
+        console.error("Failed to delete event:", res.status, res.statusText);
+      }
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
