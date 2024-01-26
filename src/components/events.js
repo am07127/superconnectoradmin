@@ -149,7 +149,7 @@ const Eventstab = () => {
   };
 
   return (
-    <>
+    <div className="container my-3">
       <button
         ref={ref}
         type="button"
@@ -355,7 +355,7 @@ const Eventstab = () => {
           </div>
         </TabPanel>
       </Tabs>
-    </>
+    </div>
   );
 };
 
