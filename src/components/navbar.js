@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+    const authToken = localStorage.getItem('authToken');
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
@@ -12,14 +14,15 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/">Home</Link>
+                        <Link className="nav-link" to="/" disabled={!authToken}>Home</Link>
                     </li>
-
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/connectors" disabled={!authToken}>Connectors</Link>
+                    </li>
                 </ul>
             </div>
         </div>
         </nav>
-        
     );
 }
 

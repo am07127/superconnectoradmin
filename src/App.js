@@ -4,6 +4,7 @@ import Eventstab from './components/events';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/login';
 import Navbar from './components/navbar';
+import Connectoreq from './components/connectoreq';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/events" element={<Eventstab />} />
+          <Route exact path="/connectors" element={<Connectoreq/>} />
         </Routes>
       </div>
     </Router>
