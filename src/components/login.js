@@ -10,7 +10,7 @@ const Login = () => {
 
     const navigate = useNavigate();
 
-    const host = 'http://localhost:3000';
+    const host = 'https://super-connector.onrender.com';
 
     const handlesubmit = async (e) => {
         e.preventDefault();

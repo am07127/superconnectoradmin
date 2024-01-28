@@ -2,7 +2,7 @@ import React from "react";
 // In your main styles or entry file (e.g., index.js, index.tsx, etc.)
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const host = "http://localhost:3000";
+const host = "https://super-connector.onrender.com";
 
 const deleteEvent = async (id) => {
   const res = await fetch(`${host}/api/events/deleteevent/${id}`, {

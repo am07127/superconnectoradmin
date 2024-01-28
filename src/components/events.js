@@ -13,7 +13,7 @@ const Eventstab = () => {
 
   const inputRef = useRef();
 
-  const host = "http://localhost:3000";
+  const host = "https://super-connector.onrender.com";
 
   const fetchevents = async () => {
     const res = await fetch(`${host}/api/events/getevents?page=${page}`);
