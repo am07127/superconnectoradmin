@@ -19,6 +19,9 @@ const Navbar = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="/connectors" disabled={!authToken}>Connectors</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/conferences" disabled={!authToken}>Users</Link>
+                    </li>
                 </ul>
             </div>
         </div>

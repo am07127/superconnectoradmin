@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/login';
 import Navbar from './components/navbar';
 import Connectoreq from './components/connectoreq';
+import Conferencestab from './components/conferences';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<Login />} />
           <Route exact path="/events" element={<Eventstab />} />
           <Route exact path="/connectors" element={<Connectoreq/>} />
+          <Route exact path="/conferences" element={<Conferencestab/>} />
         </Routes>
       </div>
     </Router>
