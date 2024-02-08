@@ -96,7 +96,7 @@ const Conferencestab = () => {
     ref.current.click();
     setNote({
         id: event._id,
-        eventName: event.name,
+        eventName: event.eventName,
         website: event.website,
         facebook: event.facebook,
         linkedin: event.linkedin,
