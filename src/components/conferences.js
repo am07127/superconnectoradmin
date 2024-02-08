@@ -242,8 +242,7 @@ const Conferencestab = () => {
                         name="eventName"
                         value={note.eventName}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                        
                     />
                 </div>
                 <div className="mb-3">
@@ -257,8 +256,7 @@ const Conferencestab = () => {
                         name="website"
                         value={note.website}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                      
                     />
                 </div>
                 <div className="mb-3">
@@ -272,8 +270,7 @@ const Conferencestab = () => {
                         name="facebook"
                         value={note.facebook}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                        
                     />
                 </div>
                 <div className="mb-3">
@@ -287,8 +284,7 @@ const Conferencestab = () => {
                         name="linkedin"
                         value={note.linkedin}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                       
                     />
                 </div>
                 <div className="mb-3">
@@ -302,8 +298,7 @@ const Conferencestab = () => {
                         name="instagram"
                         value={note.instagram}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                        
                     />
                 </div>
                 <div className="mb-3">
@@ -317,8 +312,7 @@ const Conferencestab = () => {
                         name="organizer"
                         value={note.organizer}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                        
                     />
                 </div>
                 <div className="mb-3">
@@ -332,8 +326,7 @@ const Conferencestab = () => {
                         name="contactNum"
                         value={note.contactNum}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                       
                     />
                 </div>
                 <div className="mb-3">  
@@ -347,8 +340,7 @@ const Conferencestab = () => {
                         name="location"
                         value={note.location}
                         onChange={onChange}
-                        minLength={5}
-                        required
+                      
                     />
                 </div>
                 <div className="mb-3">
@@ -362,8 +354,6 @@ const Conferencestab = () => {
                         name="date"
                         value={note.date}
                         onChange={onChange}
-                        minLength={5}
-                        required
                     />
                 </div>
                 
